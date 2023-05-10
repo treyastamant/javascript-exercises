@@ -11,16 +11,20 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
-  console.log(array);
-  return array.reduce((multiply, current) => multiply * current, 0);
+  return array.reduce((multiply, current) => multiply * current);
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return Math.pow(a, b);
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if(num===0){
+    return 1;
+  }
+  else{
+    return num * factorial(num - 1);
+  }
 };
 
 // Do not edit below this line
